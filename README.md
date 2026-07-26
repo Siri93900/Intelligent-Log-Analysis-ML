@@ -31,8 +31,6 @@ The dataset for Hadoop Distributed File System from LogHub collection.
 
 ## Repository Structure
 Intelligent-Log-Analysis-ML/
-│
-
 ├── README.md
 ├── dataset/
 ├── notebooks/
