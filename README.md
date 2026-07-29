@@ -11,7 +11,7 @@ To create, execute and test an automated log classification and error detection 
 
 ## Objectives
 Check the available literature on the use of software logs, log parsing, and machine learning in software testing.
-- Drain the log dataset from HDFS and preprocess it (using the Drain log parsing algorithm for pre-processing).
+- Collect and preprocess the HDFS log dataset using the Drain log parsing algorithm
 - Use TF-IDF to extract features from log data parsed.
 - Develop and test supervised machine learning models: Logistic Regression, Random Forest, SVM, and Naive Bayes.
 - Quantitatively compare the models based on Accuracy, Precision, Recall, F1-score, training time and prediction time.
