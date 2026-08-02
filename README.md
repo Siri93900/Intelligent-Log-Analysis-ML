@@ -27,7 +27,7 @@ Check the available literature on the use of software logs, log parsing, and mac
 - Drain (LogPai log parser)
 
 ## Dataset
-The dataset for Hadoop Distributed File System from LogHub collection.
+Due to local computing/storage constraints, experiments were conducted on a 500,000-line sample of the HDFS_v1 dataset (out of ~11.2 million total lines). This is a documented scope limitation.
 
 ## Repository Structure
 Intelligent-Log-Analysis-ML/
