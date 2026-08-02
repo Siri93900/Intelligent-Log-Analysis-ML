@@ -40,4 +40,4 @@ Intelligent-Log-Analysis-ML/
 └── requirements.txt
 
 ## Status
-Read literature and finalized dataset (HDFS) and approach to preprocessing (Drain + TF-IDF) with supervisor. Implementation in progress.
+Literature review completed. Full pipeline implemented: HDFS data parsed using Drain, features extracted using TF-IDF, and four supervised models (Logistic Regression, Random Forest, SVM, Naive Bayes) trained and evaluated on a 500,000-line HDFS sample, both as a baseline and with class-weighting applied to address class imbalance. Results, notebook, and summary documentation available in results/, notebooks/, and docs/ folders. Awaiting supervisor feedback before proceeding to further analysis (e.g. SMOTE) and remaining dissertation chapters.
