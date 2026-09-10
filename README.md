@@ -46,6 +46,19 @@ Intelligent-Log-Analysis-ML/
 ├── docs/             # supporting documentation and diagrams
 └── requirements.txt
 
+## Pipeline Architecture
+
+The implementation follows a staged pipeline, where each stage consumes the output of the one before it:
+
+1. **Data acquisition** — HDFS_v1 log file and anomaly_label.csv obtained from Loghub, stored in Google Drive.
+2. **Parsing** — drain3 applied to raw log lines, producing structured templates and cluster IDs.
+3. **Labelling** — block identifiers extracted via regex and joined against the anomaly label file.
+4. **Feature extraction** — labelled templates transformed into TF-IDF vectors.
+5. **Model training and evaluation** — all four classifiers trained and evaluated under baseline and class-weighted conditions.
+6. **Result aggregation** — metrics consolidated into comparison tables and exported as CSVs and figures.
+
+This staged design allows each component to be modified or re-run independently.
+
 ## Setup Instructions
 
 1. Clone this repository
